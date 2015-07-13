@@ -7,10 +7,13 @@
     android:padding="20dp">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_alunos"
-        android:layout_marginBottom="50dp"/>
+        android:src="@drawable/ic_launcher"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,11 +22,77 @@
         android:layout_marginBottom="5dp"/>
 
     <EditText
+        android:id="@+id/nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/aluno_nome_placeholder"
         android:background="#fff"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aluno_endereco_label"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/aluno_endereco_placeholder"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aluno_site_label"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/aluno_site_placeholder"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aluno_telefone_label"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/aluno_telefone_placeholder"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aluno_nota_label"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:id="@+id/nota"
+        android:rating="0" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"/>
 
 </LinearLayout>

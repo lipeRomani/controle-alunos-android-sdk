@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/novo"
+        android:title="Novo"
+        android:icon="@drawable/light_ic_novo"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mapa"
+        android:title="Mapa"
+        android:icon="@drawable/light_ic_mapa"
+        android:showAsAction="always"/>
+
+    <item android:icon="@drawable/light_ic_mais_opcoes"
+        android:showAsAction="always"
+        android:title="Mais Opções">
+
+        <menu>
+            <item
+                android:id="@+id/enviar_alunos"
+                android:title="Enviar Alunos"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"/>
+
+            <item
+                android:id="@+id/receber_alunos"
+                android:title="Receber Alunos"
+                android:icon="@drawable/ic_receber"
+                android:showAsAction="always"/>
+
+            <item
+                android:id="@+id/preferencias"
+                android:title="Preferências"
+                android:icon="@drawable/ic_preferencias"
+                android:showAsAction="always"/>
+        </menu>
+    </item>
+
+
+</menu>

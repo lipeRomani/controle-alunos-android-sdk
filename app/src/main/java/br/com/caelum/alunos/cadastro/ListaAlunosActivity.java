@@ -1,8 +1,11 @@
 package br.com.caelum.alunos.cadastro;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,7 +30,7 @@ public class ListaAlunosActivity extends Activity {
 
         final String[] nomes = {"Felipe", "Elisa", "Woody"};
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, nomes);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nomes);
         lista.setAdapter(arrayAdapter);
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -41,10 +44,31 @@ public class ListaAlunosActivity extends Activity {
         lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ListaAlunosActivity.this, "Nome clicado " + parent.getItemAtPosition(position),Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListaAlunosActivity.this, "Nome clicado " + parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
 
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_lista_alunos, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.novo:
+               Intent irParaFormulario =  new Intent(this, FormularioActivity.class);
+                startActivity(irParaFormulario);
+                break;
+            default:
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

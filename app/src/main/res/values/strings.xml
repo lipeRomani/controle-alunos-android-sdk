@@ -9,4 +9,15 @@
 
     <string name="aluno_ra_label">Registro do aluno</string>
     <string name="aluno_ra_placeholder">apenas números...</string>
+
+    <string name="aluno_site_label">Site do aluno</string>
+    <string name="aluno_site_placeholder">ex.: www.meusite.com</string>
+
+    <string name="aluno_telefone_label">Telefone do aluno</string>
+    <string name="aluno_telefone_placeholder">digite aqui o telefone...</string>
+
+    <string name="aluno_endereco_label">Endereço do aluno</string>
+    <string name="aluno_endereco_placeholder">digite auqi o endereço...</string>
+
+    <string name="aluno_nota_label">Nota do aluno</string>
 </resources>
