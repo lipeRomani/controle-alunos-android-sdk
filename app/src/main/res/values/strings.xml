@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Alunos</string>
+
+    <string name="aluno_nome_label">Nome do aluno</string>
+    <string name="aluno_nome_placeholder">digite aqui o nome...</string>
+
+    <string name="aluno_nascimento_label">Data de nascimento</string>
+    <string name="aluno_nascimento_placeholder">ex.: dd/mm/yyyy</string>
+
+    <string name="aluno_ra_label">Registro do aluno</string>
+    <string name="aluno_ra_placeholder">apenas números...</string>
+</resources>
