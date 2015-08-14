@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Alunos</string>
+    <string name="app_name">Agenda</string>
 
     <string name="aluno_nome_label">Nome do aluno</string>
     <string name="aluno_nome_placeholder">digite aqui o nome...</string>

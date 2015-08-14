@@ -3,16 +3,16 @@
     <item
         android:id="@+id/novo"
         android:title="Novo"
-        android:icon="@drawable/light_ic_novo"
+        android:icon="@mipmap/ic_novo"
         android:showAsAction="always"/>
 
     <item
         android:id="@+id/mapa"
         android:title="Mapa"
-        android:icon="@drawable/light_ic_mapa"
+        android:icon="@mipmap/ic_mapa"
         android:showAsAction="always"/>
 
-    <item android:icon="@drawable/light_ic_mais_opcoes"
+    <item android:icon="@mipmap/ic_opcoes"
         android:showAsAction="always"
         android:title="Mais Opções">
 
@@ -20,19 +20,19 @@
             <item
                 android:id="@+id/enviar_alunos"
                 android:title="Enviar Alunos"
-                android:icon="@drawable/ic_enviar"
+                android:icon="@mipmap/ic_enviar"
                 android:showAsAction="always"/>
 
             <item
                 android:id="@+id/receber_alunos"
                 android:title="Receber Alunos"
-                android:icon="@drawable/ic_receber"
+                android:icon="@mipmap/ic_receber"
                 android:showAsAction="always"/>
 
             <item
                 android:id="@+id/preferencias"
                 android:title="Preferências"
-                android:icon="@drawable/ic_preferencias"
+                android:icon="@mipmap/ic_preferencias"
                 android:showAsAction="always"/>
         </menu>
     </item>
